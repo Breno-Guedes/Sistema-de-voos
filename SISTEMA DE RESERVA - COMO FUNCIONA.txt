@@ -1,0 +1,76 @@
+DOCUMENTAÇÃO - SISTEMA DE RESERVA DE VOOS
+Curso: Análise e Desenvolvimento de Sistemas
+Período: MÓDULO 1
+
+
+Objetivo do sistema:
+Criar um sistema simples para cadastrar voos, pesquisar voos, fazer reservas e exibir reservas.  
+O sistema é feito em linguagem C, usando o terminal para interação com o usuário.  
+Os dados ficam guardados só na memória enquanto o programa está rodando.
+
+Arquivos do projeto:
+- reserva.h → Cabeçalho: contém as definições das estruturas e declaração das funções.
+- reserva.c → Implementação das funções principais do sistema.
+- main.c → Função principal (menu) que chama as funções do sistema.
+
+Structs utilizados:
+
+1. Voo:
+Guarda os dados principais de um voo:
+- número do voo
+- origem
+- destino
+- data
+- hora de partida
+- hora de chegada
+
+2. Reserva:
+Guarda os dados de uma reserva:
+- número do voo reservado
+- nome do passageiro
+- documento (RG ou passaporte)
+- assento reservado
+
+Funcionalidades do sistema:
+
+1. Cadastrar Voo
+- Pede os dados de um novo voo (origem, destino, data, etc.).
+- Salva o voo na lista de voos.
+
+2. Exibir todos os voos
+- Mostra todos os voos cadastrados até o momento.
+
+3. Pesquisar voos
+- Usuário informa origem, destino e data.
+- O sistema procura na lista de voos aqueles que têm exatamente essas informações.
+- Se algum campo estiver vazio, o sistema avisa que todos são obrigatórios.
+
+4. Fazer reserva
+- Usuário informa número do voo, nome, documento e assento.
+- O sistema verifica se o voo existe.
+- Valida que os campos obrigatórios não estão vazios.
+- Verifica se já existe uma reserva para o mesmo assento no mesmo voo.
+- Verifica se o mesmo passageiro já reservou no mesmo voo.
+- Verifica se o limite de 120 assentos foi ultrapassado. 
+- Se estiver tudo certo, salva a reserva.
+
+5. Exibir reservas
+- Mostra todas as reservas feitas até agora.
+
+Como funciona o programa (main.c):
+- Mostra um menu com as opções: cadastrar voo, exibir voos, pesquisar voos, fazer reserva e exibir reservas.
+- Usuário escolhe uma opção digitando o número.
+- O programa chama a função correspondente.
+- Repete até o usuário escolher a opção de sair.
+
+**Validações importantes:**
+- O sistema não deixa cadastrar voos ou reservas além do limite máximo.
+- Não deixa pesquisar voos sem preencher origem, destino e data.
+- Não permite reservar um assento já ocupado no mesmo voo.
+- Não permite reservar o mesmo voo mais de uma vez para o mesmo passageiro.
+- Não permite ultrapassar o limite de 120 assentos por voo.
+
+Observações finais:
+- O sistema funciona apenas no terminal.
+- Os dados ficam só na memória e são perdidos quando o programa fecha.
+- O código está todo comentado para ajudar no entendimento.
