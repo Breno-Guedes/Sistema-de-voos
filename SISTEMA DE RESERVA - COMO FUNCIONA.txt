@@ -1,4 +1,3 @@
-DOCUMENTAÇÃO - SISTEMA DE RESERVA DE VOOS
 Curso: Análise e Desenvolvimento de Sistemas
 Período: MÓDULO 1
 
@@ -14,7 +13,6 @@ Arquivos do projeto:
 - main.c → Função principal (menu) que chama as funções do sistema.
 
 Structs utilizados:
-
 1. Voo:
 Guarda os dados principais de um voo:
 - número do voo
@@ -63,7 +61,7 @@ Como funciona o programa (main.c):
 - O programa chama a função correspondente.
 - Repete até o usuário escolher a opção de sair.
 
-**Validações importantes:**
+Validações importantes:
 - O sistema não deixa cadastrar voos ou reservas além do limite máximo.
 - Não deixa pesquisar voos sem preencher origem, destino e data.
 - Não permite reservar um assento já ocupado no mesmo voo.
@@ -74,3 +72,4 @@ Observações finais:
 - O sistema funciona apenas no terminal.
 - Os dados ficam só na memória e são perdidos quando o programa fecha.
 - O código está todo comentado para ajudar no entendimento.
+
