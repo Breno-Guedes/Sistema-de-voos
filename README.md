@@ -92,4 +92,7 @@ Guarda os dados de uma reserva:
 
 ---
 
-✍️ *Desenvolvido por Breno de Souza Guedes — Instituto Federal do Piauí (IFPI) – Campus Corrente.*
+## 👨‍💻 Desenvolvido por  
+
+**Breno de Souza Guedes**  
+Estudante do Instituto Federal do Piauí – Campus Corrente (IFPI Corrente)
