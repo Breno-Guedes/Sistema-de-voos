@@ -7,8 +7,7 @@
 
 ## 🎯 Objetivo do Sistema  
 
-Criar um sistema simples para **cadastrar voos**, **pesquisar voos**, **fazer reservas** e **exibir reservas**.  
-O sistema é desenvolvido em **linguagem C**, com interação feita pelo **terminal**.  
+Criar um sistema simples para **cadastrar voos**, **pesquisar voos**, **fazer reservas** e **exibir reservas**. O sistema é desenvolvido em **linguagem C**, com interação feita pelo **terminal**.  
 Os dados são armazenados **apenas na memória** enquanto o programa está em execução.  
 
 ---
